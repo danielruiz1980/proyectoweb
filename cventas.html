@@ -17,7 +17,7 @@
     
     <title>Inicio</title>
     
-<body>
+<body style="background-color:#D5F5E3;"> 
     
 
       <header class="site-header inicio">   <!-- Inicio del header-->
@@ -91,26 +91,58 @@
           
 
       </header>
+      <main>
+        <div class="container text-center mt-4 mx-auto">
+          <h1>Calculadora de ventas</h1>
 
-      
+
+                      <div class="row justify-content-center mt-3">
+                              <div class="col-4">
+                                <label for= "vc" class="form label mb-2">Valor De Compra</label> 
+                                <input type="text" class="form-control"   id ="vc" >
+                              </div>
+                              <div class="col-4">
+                                <label for= "pg" class="form label mb-2">Porcentaje De Ganancia</label> 
+                                <input type="text" class="form-control"   id = "pg" >
+                              </div>
+                      </div>
+                      
+                      <div class="row justify-content-center mt-3">
+                          <div class="col-4 ">
+                            <label for= "vc" class="form label mb-2">Valor De Compra</label> 
+                            <input type="text" class="form-control"   id ="vc" >
+                          </div>
+                      </div>
+
+                      <div class="row justify-content-center mt-4">
+                            <div class="d-grid gap-2 d-md-block">
+                              <button type ="submit" class="btn btn-primary">
+                                CALCULAR
+                              </button>
+                              <button type ="submit" class="btn btn-primary">
+                                BORRAR
+                              </button>
+                            </div>
+                      </div>
+
+
+                      <div class="row justify-content-center mt-4">
+                            <div class="col-4 ">
+                              <label for= "vc" class="form label mb-2">Valor De Venta</label> 
+                                  <div class = "alert alert-warning col-12 col-md-" role="alert1">
+                                  </div>
+                            </div>
+
+                            <div class="col-4">
+                              <label for= "pg" class="form label mb-2">Ganancia</label> 
+                                  <div class = "alert alert-warning col-12 col-md-" role="alert2">
+                                  </div>
+                            </div>
+                      </div>
+        </div>
+      </main>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-      <footer class="bg-dark text-center text-white fixed-bottom">
+      <footer class="bg-dark text-center py-2 text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
           <!-- Section: Social media -->
@@ -146,13 +178,6 @@
         </div>
         <!-- Copyright -->
       </footer>
-     
-
-
-
-
-    
-     
 </body>
 
 
