@@ -1,229 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<!doctype html>
+<html lang="es-la">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Actualizar</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <link rel="stylesheet" href="css/styles.css">
+    
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
-    <script src = "js/bootstrap.bundle.min.js"></script>
-    
-    <title>Inicio</title>
-    
-<body>
-    
+    <script src = "js/bootstrap.bundle.js"></script>
+    <title>Actualizar!</title>
+  </head>
+  <body>
 
-      <header class="site-header inicio">   <!-- Inicio del header-->
+    <header class="site-header inicio">   <!-- Inicio del header-->
 
       
-        <div class="container-fluid bg-dark"> <!-- cotenedor logo -->
-                    
-          <div class=" mx-auto"> <!-- instrución para centrar -->
-              <a  href="index.html">                      
-                  <img src="img/logo.png"   alt="logo"  width="500" height="auto" class="img-fluid d-block mx-auto" >
-              </a>
-          </div>   
-              
-        </div>
-        
-
-
-        <nav class="navbar navbar-expand-lg   bg-dark  "> <!-- inicio del menu -->
-          <div class="container-fluid  ">
-                        
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon btn btn-warning"></span>
-            </button> <!--boton menu -->
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                  <a class="nav-link active text-light " aria-current="page" href="index.html"><h5>Home </h5></a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Administrador
-                  </a>
-                  <ul class="dropdown-menu bg-dark">
-                    <li><a class="dropdown-item text-light" href="BD.html">Crear Base De Datos</a></li>
-                    <li><a class="dropdown-item text-light" href="tabla.html">Crear Tabla</a></li>                    
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Inventario 
-                  </a>
-                  <ul class="dropdown-menu bg-dark">
-                    <li><a class="dropdown-item text-light" href="ingresar.html">Ingresar Producto</a></li>
-                    <li><a class="dropdown-item text-light" href="actualizar.html">Actualizar Producto</a></li>
-                    <li><a class="dropdown-item text-light" href="eliminar.html">Eliminar Producto</a></li>
-                    <li><a class="dropdown-item text-light" href="consultar.html">Consultar Producto</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Utilidades
-                  </a>
-                  <ul class="dropdown-menu bg-dark">
-                    <li><a class="dropdown-item text-light" href="cventas.html">Calculadora Ventas</a></li>
-                    <li><a class="dropdown-item text-light" href="cbytes.html">Calculadora Bytes</a></li>                    
-                  </ul>
-                </li>
-
-
-
-              </ul>
+      <div class="container-fluid bg-dark"> <!-- cotenedor logo -->
+                  
+        <div class=" mx-auto"> <!-- instrución para centrar -->
+            <a  href="index.html">                      
+                <img src="img/logo.png"   alt="logo"  width="500" height="auto" class="img-fluid d-block mx-auto" >
+            </a>
+        </div>   
             
-          </div>
-          </div>
-        </nav>
+      </div>
+      
+
+
+      <nav class="navbar navbar-expand-lg   bg-dark  "> <!-- inicio del menu -->
+        <div class="container-fluid  ">
+                      
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon btn btn-warning"></span>
+          </button> <!--boton menu -->
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link active text-light " aria-current="page" href="index.html"><h5>Home </h5></a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Administrador
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-light" href="BD.html">Crear Base De Datos</a></li>
+                  <li><a class="dropdown-item text-light" href="tabla.html">Crear Tabla</a></li>                    
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Inventario 
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-light" href="ingresar.html">Ingresar Producto</a></li>
+                  <li><a class="dropdown-item text-light" href="actualizar.html">Actualizar Producto</a></li>
+                  <li><a class="dropdown-item text-light" href="eliminar.html">Eliminar Producto</a></li>
+                  <li><a class="dropdown-item text-light" href="consultar.html">Consultar Producto</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-light" href="cventas.html">Calculadora Ventas</a></li>
+                  <li><a class="dropdown-item text-light" href="cbytes.html">Calculadora Bites</a></li>                    
+                </ul>
+              </li>
+
+
+
+            </ul>
           
-
-      </header>
-
-      
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+        </div>
+      </nav>
         
 
-      <footer class="bg-dark text-center text-white  fixed-bottom">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/"  target="_blank" role="button"
-              ><i class="fab fa-facebook-f "></i
-            ></a>
+    </header>
+    <main>
+      <p class="text-center fs-2">Formulario para actualizar un producto</p>
       
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/"  target="_blank" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/"  target="_blank" role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+
+        <div class="container mt-3">
+          
+          <form class="row g-3 justify-content-center needs-validation" novalidate>
+            <div class="col-12 position-relative">
+              <label for="act_cond" class="form-label">Escriba el código del producto</label>
+              <input type="text" class="form-control" placeholder="Recuerde usar el numero 770 al inicio del código(IAC COL)" id="act_cond" required>
+              <div class="valid-tooltip">
+                Codigo verificado
+              </div>
+            </div>
+            <div class="col-12 position-relative">
+              <label for="act_marca" class="form-label">Actualice la marca del producto</label>
+              <input type="text" class="form-control" id="act_marca" required>
+              <div class="valid-tooltip">
+                Has actualizado esta marca
+              </div>
+            </div>
+            <div class="col-6 position-relative">
+              <label for="act_precioe" class="form-label">Escriba un nuevo precio para el producto</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="act_precio_Prepend">$</span>
+                <input type="number" class="form-control" id="act_precio" aria-describedby="act_precio_Prepend" required>
+                <div class="invalid-tooltip">
+                  Actualice el precio del producto.
+                </div>
+              </div>
+            </div>
+            <div class="col-6 position-relative">
+              <label for="act_uni" class="form-label">Unidades de producto</label>
+              <select class="form-select" id="act_uni" required>
+                <option selected disabled value="">Cantidad...</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+                <option value="1">13</option>
+                <option value="1">14</option>
+                <option value="1">15</option>
+                <option value="1">16</option>
+                <option value="1">17</option>
+                <option value="1">18</option>
+                <option value="1">19</option>
+                <option value="1">20</option>
+                <option value="1">21</option>
+                <option value="1">22</option>
+                <option value="1">23</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">30</option>
+                <option value="1">31</option>
+                <option value="1">32</option>
+                <option value="1">33</option>
+                <option value="1">34</option>
+                <option value="1">35</option>
+                <option value="1">36</option>
+                <option value="1">37</option>
+                <option value="1">38</option>
+                <option value="1">39</option>
+                <option value="1">40</option>
+                <option value="1">41</option>
+                <option value="1">42</option>
+                <option value="1">43</option>
+                <option value="1">44</option>
+                <option value="1">45</option>
+                <option value="1">46</option>
+                <option value="1">47</option>
+                <option value="1">48</option>
+                <option value="1">49</option>
+                <option value="1">50</option>
+
+              </select>
+              <div class="invalid-tooltip">
+                Seleccione un valor.
+              </div>
+            </div>
+            <div class="col-4 pb-4">
+              <button class="btn btn-outline-primary" id="mod_pro" type="submit">Modificar producto</button>
+            </div>
+          </form>
         </div>
-        <!-- Grid container -->
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
       
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright: Daniel Ruíz  
-          <a class="text-white" href="https://www.unad.edu.co/" target="_blank">UNAD</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-     
 
-
-
-
+    <footer class="bg-dark text-center fixed-bottom text-white">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Social media -->
+        <section class="mt-0">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/"  target="_blank" role="button"
+            ><i class="fab fa-facebook-f "></i
+          ></a>
     
-     
-</body>
-
-
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
     
-
-
-</html>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/"  target="_blank" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-      <footer class="bg-dark text-center text-white fixed-bottom">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/"  target="_blank" role="button"
-              ><i class="fab fa-facebook-f "></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/"  target="_blank" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/"  target="_blank" role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright: Daniel Ruíz  
-          <a class="text-white" href="https://www.unad.edu.co/" target="_blank">UNAD</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-     
-
-
-
-
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/"  target="_blank" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
     
-     
-</body>
+      <!-- Copyright -->
+      <div class="text-center  pb-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: Daniel Ruíz  
+        <a class="text-white" href="https://www.unad.edu.co/" target="_blank">UNAD</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+   
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
 
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+      'use strict'
 
-    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
 
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+          }
 
+          form.classList.add('was-validated')
+          }, false)
+      })
+      })()
+    </script>
+  </body>
 </html>

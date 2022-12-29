@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-la">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Calculadora de Ventas</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <link rel="stylesheet" href="css/styles.css">
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
     <script src = "js/bootstrap.bundle.min.js"></script>
-    
-    <title>Inicio</title>
-    
-<body style="background-color:#D5F5E3;"> 
-    
+</head>
 
+<body style="background-color:#D5F5E3;">
       <header class="site-header inicio">   <!-- Inicio del header-->
 
       
@@ -77,7 +73,7 @@
                   </a>
                   <ul class="dropdown-menu bg-dark">
                     <li><a class="dropdown-item text-light" href="cventas.html">Calculadora Ventas</a></li>
-                    <li><a class="dropdown-item text-light" href="cbytes.html">Calculadora Bytes</a></li>                    
+                    <li><a class="dropdown-item text-light" href="cbytes.html">Calculadora Bites</a></li>                    
                   </ul>
                 </li>
 
@@ -92,34 +88,35 @@
 
       </header>
       <main>
-        <div class="container text-center mt-4 mx-auto">
+       
+        <div class="container pb-5 text-center font-monospace mt-4  mx-auto">
           <h1>Calculadora de ventas</h1>
 
-
-                      <div class="row justify-content-center mt-3">
-                              <div class="col-4">
-                                <label for= "vc" class="form label mb-2">Valor De Compra</label> 
-                                <input type="text" class="form-control"   id ="vc" >
+            <form id="f1">
+                      <div class="row justify-content-center mt-3   ">
+                              <div class="col-4 form-group">
+                                <label for="vc" class="form label mb-2 ">Valor Total De Compra</label> 
+                                <input type="text" class="form-control" id ="vc" required >
                               </div>
-                              <div class="col-4">
-                                <label for= "pg" class="form label mb-2">Porcentaje Ganancia</label> 
-                                <input type="text" class="form-control"   id = "pg" >
+                              <div class="col-4 form-group">
+                                <label for="pg" class="form label mb-2">Porcentaje Ganancia</label> 
+                                <input type="text" class="form-control" id = "pg" required >
                               </div>
                       </div>
                       
                       <div class="row justify-content-center mt-3">
-                          <div class="col-4 ">
-                            <label for= "vc" class="form label mb-2">Valor De Compra</label> 
-                            <input type="text" class="form-control"   id ="vc" >
+                          <div class="col-4 form-group">
+                            <label for="pi" class="form label mb-2">Porcentaje de impuestos</label> 
+                            <input type="text" class="form-control" id ="pi" required>
                           </div>
                       </div>
 
                       <div class="row justify-content-center mt-4">
                             <div class="d-grid gap-2 d-md-block">
-                              <button type ="submit" class="btn btn-primary">
+                              <button type="" class="btn btn-primary" id = "calcular">
                                 CALCULAR
                               </button>
-                              <button type ="submit" class="btn btn-primary">
+                              <button type="submit" class="btn btn-primary" id = "blanco">
                                 BORRAR
                               </button>
                             </div>
@@ -127,26 +124,35 @@
 
 
                       <div class="row justify-content-center mt-4">
-                            <div class="col-4 ">
-                              <label for= "vc" class="form label mb-2">Valor De Venta</label> 
-                                  <div class = "alert alert-warning col-12 col-md-" role="alert1">
+                            <div class="col-4 form-group ">
+                              <label for="resp_venta" class="form label pb-1">Valor De Venta</label> 
+                                  <div class = "alert alert-warning col-12 " id = "resp_venta" role="alert">
                                   </div>
                             </div>
 
-                            <div class="col-4">
-                              <label for= "pg" class="form label mb-2">Ganancia</label> 
-                                  <div class = "alert alert-warning col-12 col-md-" role="alert2">
+                            <div class="col-4 pb-5 form-group">
+                              <label for="resp_gan" class="form label pb-1">Ganancia</label> 
+                                  <div class = "alert alert-warning col-12 " id = "resp_gan" role="alert">
                                   </div>
                             </div>
                       </div>
+
+            </form>         
         </div>
+     
+
       </main>
     
+
+
+
+
+
       <footer class="bg-dark text-center text-white fixed-bottom">
         <!-- Grid container -->
-        <div class="container p-4 pb-0">
+        <div class="container">
           <!-- Section: Social media -->
-          <section class="mb-4">
+          <section class="mt-0">
             <!-- Facebook -->
             <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/"  target="_blank" role="button"
               ><i class="fab fa-facebook-f "></i
@@ -172,12 +178,15 @@
         <!-- Grid container -->
       
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center  pb-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright: Daniel Ruíz  
           <a class="text-white" href="https://www.unad.edu.co/" target="_blank">UNAD</a>
         </div>
         <!-- Copyright -->
       </footer>
+
+
+      <script src = "js/js_cventas.js"></script>
 </body>
 
 

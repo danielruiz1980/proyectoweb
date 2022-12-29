@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-la">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Calculadora de Bytes</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <link rel="stylesheet" href="css/styles.css">
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
     <script src = "js/bootstrap.bundle.min.js"></script>
-    
-    <title>Inicio</title>
+</head>
     
 <body style="background-color:#D5F5E3;">
     
@@ -36,7 +34,7 @@
 
 
         <nav class="navbar navbar-expand-lg   bg-dark  "> <!-- inicio del menu -->
-          <div class="container-fluid  ">
+          <div class="container-fluid">
                         
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon btn btn-warning"></span>
@@ -77,7 +75,7 @@
                   </a>
                   <ul class="dropdown-menu bg-dark">
                     <li><a class="dropdown-item text-light" href="cventas.html">Calculadora Ventas</a></li>
-                    <li><a class="dropdown-item text-light" href="cbytes.html">Calculadora Bytes</a></li>                    
+                    <li><a class="dropdown-item text-light" href="cbytes.html">Calculadora Bites</a></li>                    
                   </ul>
                 </li>
 
@@ -95,35 +93,37 @@
 
 
       <main>
-        <div class="container text-center mt-4 mx-auto">
-          <h1>Calculadora de Bytes</h1>
+        <div class="container text-center pt-4 pb-4">
+          <h1>Calculadora de Bites</h1>
+                <form id="f2">
 
-
-                      <div class="row justify-content-center mt-3">
-                              <div class="col-4">
-                                <label for= "vc" class="form label mb-2">Digite un valor:</label> 
-                                <input type="text" class="form-control"   id ="vc" >
-                                <select class="form-select" aria-label="Default select example">
+                      <div class="row justify-content-center mt-3 pb-3">
+                              <div class="col-4 form-group">
+                                <label for= "vb" class="form label mb-2">Digite un valor:</label> 
+                                <input type="text" class="form-control"   id ="vb" >
+                                <select class="form-select" id="op_1" aria-label="Default select example">
                                   <option selected>Seleccione una unidad</option>
-                                  <option value="1">Bytes</option>
-                                  <option value="2">KiloByte</option>
-                                  <option value="3">MegaByte</option>
-                                  <option value="4">GigaByte</option>
-                                  <option value="5">TeraByte</option>
+                                  <option value="1">Bites</option>
+                                  <option value="2">Bytes</option>
+                                  <option value="3">KiloByte</option>
+                                  <option value="4">MegaByte</option>
+                                  <option value="5">GigaByte</option>
+                                  <option value="6">TeraByte</option>
 
                                 </select>  
                               </div>
-                              <div class="col-4">
-                                <select class="form-select" aria-label="Default select example">
+                              <div class="col-4 form-group">
+                                <select class="form-select" id="op_2" aria-label="Default select example">
                                   <option selected>Seleccione una unidad</option>
-                                  <option value="1">Bytes</option>
-                                  <option value="2">KiloByte</option>
-                                  <option value="3">MegaByte</option>
-                                  <option value="4">GigaByte</option>
-                                  <option value="5">TeraByte</option>
+                                  <option value="1">Bites</option>
+                                  <option value="2">Bytes</option>
+                                  <option value="3">KiloByte</option>
+                                  <option value="4">MegaByte</option>
+                                  <option value="5">GigaByte</option>
+                                  <option value="6">TeraByte</option>
 
                                 </select>
-                                <div class = "alert alert-warning col-12 col-md-" role="alert2">
+                                <div class = "alert alert-warning col-12" id="res_byte" role="alert2">
                                 </div>
                               </div>
                               
@@ -132,14 +132,15 @@
                       
             
 
-                      <div class="row justify-content-center mt-4">
+                      <div class="row justify-content-center mt-4 pb-5">
                             <div class="d-grid gap-2 d-md-block">
-                              <button type ="submit" class="btn btn-primary">
+                              <button type ="" class="btn btn-primary" id="calcu_2">
                                 CALCULAR
                               </button>
                             </div>
                       </div>
-
+                </form>
+        </div>
       </main>
 
       
@@ -160,11 +161,12 @@
 
         
 
+      
       <footer class="bg-dark text-center text-white fixed-bottom">
         <!-- Grid container -->
-        <div class="container p-4 pb-0">
+        <div class="container">
           <!-- Section: Social media -->
-          <section class="mb-4">
+          <section class="mt-0">
             <!-- Facebook -->
             <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/"  target="_blank" role="button"
               ><i class="fab fa-facebook-f "></i
@@ -190,7 +192,7 @@
         <!-- Grid container -->
       
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center  pb-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright: Daniel Ruíz  
           <a class="text-white" href="https://www.unad.edu.co/" target="_blank">UNAD</a>
         </div>
@@ -199,7 +201,7 @@
      
 
 
-
+      <script src="js/js_cbytes.js"></script>
 
     
      
