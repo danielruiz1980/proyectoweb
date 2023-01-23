@@ -1,18 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-la">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eliminar!!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    
-    <link href = "css/bootstrap.min.css" rel = "stylesheet">
-    <script src = "js/bootstrap.bundle.js"></script>
     <title>Eliminar!</title>
   </head>
   <body>
@@ -51,8 +50,10 @@
                   Administrador
                 </a>
                 <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item text-light" href="BD.html">Crear Base De Datos</a></li>
-                  <li><a class="dropdown-item text-light" href="tabla.html">Crear Tabla</a></li>                    
+                  <li><a class="dropdown-item text-light" href="php/crear_bd.php">Crear Base De Datos</a></li>
+                  <li><a class="dropdown-item text-light" href="php/crear_tabla.php">Crear Tabla</a></li>
+                  <li><a class="dropdown-item text-light" href="php/pdf.php">Generar PDF</a></li> 
+                  <li><a class="dropdown-item text-light" href="php/backup.php">Generar backup</a></li>                      
                 </ul>
               </li>
 
@@ -94,35 +95,18 @@
 
         <div class="container mt-5">
           
-          <form class="row g-3 justify-content-center needs-validation" novalidate>
+          <form action="php/eliminar.php" method="post" class="row g-3 justify-content-center needs-validation" novalidate>
             <div class="col-12 position-relative">
-              <label for="elim_cod" class="form-label">Ingrese el código del producto</label>
-              <input type="text" class="form-control" placeholder="Recuerde usar el numero 770 al inicio del código(IAC COL)" id="elim_cod" required>
-              <div class="valid-tooltip">
-                Completado
+              <div class="form-group">
+                <label for="val_cod" class="form-label">Ingrese el código del producto</label>
+                <input type="text" class="form-control" placeholder="Recuerde usar el numero 770 al inicio del código(IAC COL)" name="val_cod" id="val_cod" required>
+                <div class="valid-tooltip">
+                  Completado
+                </div>
               </div>
             </div>
-            
             <div class="col-6 pb-4">
-              <button class="btn btn-outline-primary" id="bus_pro" type="submit">Buscar producto</button>
-            </div>
-            <div class="col-6 pb-4">
-              <button class="btn btn-outline-primary" id="elim_pro" type="submit">Eliminar producto</button>
-            </div>
-
-            <div class="col-12">
-              <label for="digitoVerificacion">Marca del producto: </label>
-              <input type="text" id="bus_elim_marca" readonly="readonly">
-            </div>
-
-            <div class="col-6">
-              <label for="digitoVerificacion">Precio del producto: </label>
-              <input type="text" id="bus_elim_precio" readonly="readonly">
-            </div>
-
-            <div class="col-6">
-              <label for="digitoVerificacion">Unidades del producto: </label>
-              <input type="text" id="bus_elim__uni" readonly="readonly">
+              <button class="btn btn-outline-primary" type="submit">Eliminar producto</button>
             </div>
           </form>
         </div>
@@ -178,38 +162,32 @@
       </div>
       <!-- Copyright -->
     </footer>
-   
-
-      
-
-    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
-    <script type="importmap">
-    </script>
-    <script type="module">
-      import * as bootstrap from 'bootstrap'
-
-      new bootstrap.Popover(document.getElementById('popoverButton'))
-    </script>
+  
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (() => {
-      'use strict'
+      (function(){
+        'use strict'
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      const forms = document.querySelectorAll('.needs-validation')
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('needs-validation')
 
-      // Loop over them and prevent submission
-      Array.from(forms).forEach(form => {
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
           form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
+            if (!form.checkValidity()) {
               event.preventDefault()
               event.stopPropagation()
-          }
+            }
 
-          form.classList.add('was-validated')
+            form.classList.add('was-validated')
           }, false)
-      })
+        })
       })()
     </script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src = "js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>      
+
+
+</body>
 </html>
